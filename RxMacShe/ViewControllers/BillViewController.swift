@@ -1,6 +1,6 @@
 import UIKit
 
-class BaseViewController: UIViewController {
+class BillViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

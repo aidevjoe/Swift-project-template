@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  RxMacShe
-//
-//  Created by Joe on 2017/5/18.
-//  Copyright © 2017年 Joe. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -15,7 +7,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.white
+        
+        window?.rootViewController = TabBarViewController()
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

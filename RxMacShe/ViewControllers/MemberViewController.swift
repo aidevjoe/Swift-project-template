@@ -1,6 +1,6 @@
 import UIKit
 
-class BaseViewController: UIViewController {
+class MemberViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

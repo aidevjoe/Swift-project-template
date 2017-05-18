@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5935585E5F9F57D8BE0C3A96 /* Pods_RxMacShe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C04C0FBBB6B7BC0F919C46 /* Pods_RxMacShe.framework */; };
+		77BA6D951ECDBC080086D0F9 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA6D941ECDBC080086D0F9 /* UIColor+Extension.swift */; };
+		77BA6D991ECDBD0A0086D0F9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA6D981ECDBD0A0086D0F9 /* HomeViewController.swift */; };
+		77BA6D9B1ECDBD5F0086D0F9 /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA6D9A1ECDBD5F0086D0F9 /* MemberViewController.swift */; };
+		77BA6D9D1ECDBD650086D0F9 /* BillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA6D9C1ECDBD650086D0F9 /* BillViewController.swift */; };
+		77BA6DA41ECDBECB0086D0F9 /* AppApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA6DA31ECDBECB0086D0F9 /* AppApi.swift */; };
+		77BA6DA71ECDC3A20086D0F9 /* NetActivityPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA6DA61ECDC3A20086D0F9 /* NetActivityPlugin.swift */; };
+		77BA6DA91ECDC42E0086D0F9 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA6DA81ECDC42E0086D0F9 /* UIImageView+Extension.swift */; };
+		77BA6DAC1ECDC4C80086D0F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA6DAB1ECDC4C80086D0F9 /* Constants.swift */; };
+		77BA6DAE1ECDC53B0086D0F9 /* Swift+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA6DAD1ECDC53B0086D0F9 /* Swift+Extension.swift */; };
+		77BA6DB01ECDC5960086D0F9 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA6DAF1ECDC5960086D0F9 /* DateHelper.swift */; };
 		D81F01351ECDA134006B03F5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F01341ECDA134006B03F5 /* R.generated.swift */; };
 		D82F948F1ECD775B009B95FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82F94811ECD775B009B95FD /* AppDelegate.swift */; };
 		D82F94901ECD775B009B95FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82F94881ECD775B009B95FD /* Assets.xcassets */; };
@@ -21,6 +31,16 @@
 /* Begin PBXFileReference section */
 		20C04C0FBBB6B7BC0F919C46 /* Pods_RxMacShe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxMacShe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF0A87C16B88BFEEECB5DFF /* Pods-RxMacShe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMacShe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxMacShe/Pods-RxMacShe.debug.xcconfig"; sourceTree = "<group>"; };
+		77BA6D941ECDBC080086D0F9 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		77BA6D981ECDBD0A0086D0F9 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		77BA6D9A1ECDBD5F0086D0F9 /* MemberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
+		77BA6D9C1ECDBD650086D0F9 /* BillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillViewController.swift; sourceTree = "<group>"; };
+		77BA6DA31ECDBECB0086D0F9 /* AppApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppApi.swift; sourceTree = "<group>"; };
+		77BA6DA61ECDC3A20086D0F9 /* NetActivityPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetActivityPlugin.swift; sourceTree = "<group>"; };
+		77BA6DA81ECDC42E0086D0F9 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		77BA6DAB1ECDC4C80086D0F9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		77BA6DAD1ECDC53B0086D0F9 /* Swift+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Extension.swift"; sourceTree = "<group>"; };
+		77BA6DAF1ECDC5960086D0F9 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		CB123EA195BB074401AFC785 /* Pods-RxMacShe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMacShe.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxMacShe/Pods-RxMacShe.release.xcconfig"; sourceTree = "<group>"; };
 		D81F01341ECDA134006B03F5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		D82F946B1ECD7629009B95FD /* RxMacShe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMacShe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +82,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		77BA6DA51ECDC38D0086D0F9 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				77BA6DA61ECDC3A20086D0F9 /* NetActivityPlugin.swift */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		77BA6DAA1ECDC4C80086D0F9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				77BA6DAB1ECDC4C80086D0F9 /* Constants.swift */,
+				77BA6DAF1ECDC5960086D0F9 /* DateHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		D82F94621ECD7629009B95FD = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +129,7 @@
 				D82F94851ECD775B009B95FD /* Networking */,
 				D82F94861ECD775B009B95FD /* Serives */,
 				D82F94831ECD775B009B95FD /* Extensions */,
+				77BA6DAA1ECDC4C80086D0F9 /* Helper */,
 				D82F94871ECD775B009B95FD /* Supporting Files */,
 			);
 			path = RxMacShe;
@@ -115,6 +153,9 @@
 		D82F94831ECD775B009B95FD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				77BA6D941ECDBC080086D0F9 /* UIColor+Extension.swift */,
+				77BA6DA81ECDC42E0086D0F9 /* UIImageView+Extension.swift */,
+				77BA6DAD1ECDC53B0086D0F9 /* Swift+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -129,6 +170,8 @@
 		D82F94851ECD775B009B95FD /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				77BA6DA51ECDC38D0086D0F9 /* Plugin */,
+				77BA6DA31ECDBECB0086D0F9 /* AppApi.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -155,6 +198,9 @@
 			isa = PBXGroup;
 			children = (
 				D82F94951ECD783D009B95FD /* Base */,
+				77BA6D981ECDBD0A0086D0F9 /* HomeViewController.swift */,
+				77BA6D9A1ECDBD5F0086D0F9 /* MemberViewController.swift */,
+				77BA6D9C1ECDBD650086D0F9 /* BillViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -219,7 +265,6 @@
 				TargetAttributes = {
 					D82F946A1ECD7629009B95FD = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = T8CE5P8P3Y;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -321,11 +366,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77BA6DB01ECDC5960086D0F9 /* DateHelper.swift in Sources */,
+				77BA6D9B1ECDBD5F0086D0F9 /* MemberViewController.swift in Sources */,
+				77BA6DAE1ECDC53B0086D0F9 /* Swift+Extension.swift in Sources */,
 				D82F948F1ECD775B009B95FD /* AppDelegate.swift in Sources */,
+				77BA6DA91ECDC42E0086D0F9 /* UIImageView+Extension.swift in Sources */,
 				D82F949B1ECD78C1009B95FD /* BaseViewController.swift in Sources */,
 				D81F01351ECDA134006B03F5 /* R.generated.swift in Sources */,
+				77BA6DA41ECDBECB0086D0F9 /* AppApi.swift in Sources */,
+				77BA6D991ECDBD0A0086D0F9 /* HomeViewController.swift in Sources */,
+				77BA6DAC1ECDC4C80086D0F9 /* Constants.swift in Sources */,
 				D82F94991ECD7896009B95FD /* NavigationViewController.swift in Sources */,
+				77BA6D9D1ECDBD650086D0F9 /* BillViewController.swift in Sources */,
+				77BA6DA71ECDC3A20086D0F9 /* NetActivityPlugin.swift in Sources */,
 				D82F94971ECD787E009B95FD /* TabBarViewController.swift in Sources */,
+				77BA6D951ECDBC080086D0F9 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -417,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -430,8 +485,9 @@
 			baseConfigurationReference = 3BF0A87C16B88BFEEECB5DFF /* Pods-RxMacShe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T8CE5P8P3Y;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "RxMacShe/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joe78.RxMacShe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,8 +500,9 @@
 			baseConfigurationReference = CB123EA195BB074401AFC785 /* Pods-RxMacShe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T8CE5P8P3Y;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "RxMacShe/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joe78.RxMacShe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
