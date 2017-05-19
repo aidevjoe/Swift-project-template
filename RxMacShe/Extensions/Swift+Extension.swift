@@ -15,16 +15,6 @@ extension Optional {
     }
 }
 
-extension String {
-    func toUInt() -> UInt? {
-        return UInt(self)
-    }
-    
-    func toUIntWithDefault(defaultValue: UInt) -> UInt {
-        return UInt(self) ?? defaultValue
-    }
-}
-
 // Anything that can hold a value (strings, arrays, etc)
 protocol Occupiable {
     var isEmpty: Bool { get }

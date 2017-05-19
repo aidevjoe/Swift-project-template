@@ -2,8 +2,8 @@ import Moya
 import MoyaSugar
 
 enum AppApi {
-    case Login(username: String, password: String)
-    case Apps(page: Int)
+    case SignIn(email: String, password: String)
+    case Signup()
 }
 
 extension AppApi: SugarTargetType {
@@ -16,7 +16,7 @@ extension AppApi: SugarTargetType {
     /// method + path.
     var route: Route {
         switch self {
-        case .Login:
+        case .SignIn:
             return .post("/login")
         default:
             return .get("")
@@ -25,8 +25,8 @@ extension AppApi: SugarTargetType {
     /// encoding + parameters.
     var params: Parameters? {
         switch self {
-        case .Login(let username, let password):
-            return ["username": username, "password": password]
+        case .SignIn(let email, let password):
+            return ["email": email, "password": password]
         default:
             return nil
         }
@@ -49,4 +49,12 @@ extension AppApi: SugarTargetType {
             return Data()
         }
     }
+}
+
+func stubbedResponse(filename: String) -> Data! {
+    @objc class TestClass: NSObject { }
+    
+    let bundle = Bundle(for: TestClass.self)
+    let path = bundle.path(forResource: filename, ofType: "json")
+    return (try? Data(contentsOf: URL(fileURLWithPath: path!)))
 }

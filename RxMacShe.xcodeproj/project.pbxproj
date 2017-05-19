@@ -26,6 +26,32 @@
 		D82F94971ECD787E009B95FD /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82F94961ECD787E009B95FD /* TabBarViewController.swift */; };
 		D82F94991ECD7896009B95FD /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82F94981ECD7896009B95FD /* NavigationViewController.swift */; };
 		D82F949B1ECD78C1009B95FD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82F949A1ECD78C1009B95FD /* BaseViewController.swift */; };
+		D8613A931ECE7F6100DE69B6 /* NetworkingReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613A921ECE7F6100DE69B6 /* NetworkingReachabilityService.swift */; };
+		D8613A951ECE7FAC00DE69B6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613A941ECE7FAC00DE69B6 /* User.swift */; };
+		D8613A981ECE802700DE69B6 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613A971ECE802700DE69B6 /* HomeCell.swift */; };
+		D8613A9A1ECE804400DE69B6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613A991ECE804400DE69B6 /* HomeView.swift */; };
+		D8613A9C1ECE805600DE69B6 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613A9B1ECE805600DE69B6 /* HomeViewModel.swift */; };
+		D8613A9E1ECE809000DE69B6 /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613A9D1ECE809000DE69B6 /* GlobalFunctions.swift */; };
+		D8613AA01ECE816E00DE69B6 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613A9F1ECE816E00DE69B6 /* BaseTableViewCell.swift */; };
+		D8613AA31ECE81C900DE69B6 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613AA21ECE81C900DE69B6 /* UIViewController+Rx.swift */; };
+		D8613AA51ECE830500DE69B6 /* Observable+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613AA41ECE830500DE69B6 /* Observable+Operators.swift */; };
+		D8613AA71ECE842B00DE69B6 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613AA61ECE842B00DE69B6 /* HelperFunctions.swift */; };
+		D8613AA91ECE860F00DE69B6 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613AA81ECE860F00DE69B6 /* UIViewController+Extension.swift */; };
+		D8613AAB1ECE87AD00DE69B6 /* UILable+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613AAA1ECE87AD00DE69B6 /* UILable+Font.swift */; };
+		D8613AAF1ECE8C7B00DE69B6 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613AAE1ECE8C7B00DE69B6 /* Date+Extension.swift */; };
+		D8613AB11ECE8CC500DE69B6 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613AB01ECE8CC500DE69B6 /* String+Extension.swift */; };
+		D8613AB31ECE8ECB00DE69B6 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613AB21ECE8ECB00DE69B6 /* UIApplication+Extension.swift */; };
+		D8613AB51ECE8F1E00DE69B6 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613AB41ECE8F1E00DE69B6 /* UIImage+Extension.swift */; };
+		D8613AB71ECE8F3F00DE69B6 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613AB61ECE8F3F00DE69B6 /* UITableView+Extension.swift */; };
+		D8613ABB1ECE8FA900DE69B6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613ABA1ECE8FA900DE69B6 /* UIView+Extension.swift */; };
+		D8613ABC1ECE919C00DE69B6 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613AB81ECE8F8600DE69B6 /* UIView+Frame.swift */; };
+		D8613ABE1ECEA01D00DE69B6 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613ABD1ECEA01D00DE69B6 /* Networking.swift */; };
+		D8613AC01ECEA09100DE69B6 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613ABF1ECEA09100DE69B6 /* Logger.swift */; };
+		D8613AC21ECEB8F300DE69B6 /* AuthPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613AC11ECEB8F300DE69B6 /* AuthPlugin.swift */; };
+		D8613AC41ECEB91200DE69B6 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613AC31ECEB91200DE69B6 /* ServiceProvider.swift */; };
+		D8613AC61ECEB95300DE69B6 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613AC51ECEB95300DE69B6 /* AlertService.swift */; };
+		D8613AC81ECEB98100DE69B6 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613AC71ECEB98100DE69B6 /* BaseService.swift */; };
+		D8613ACA1ECEBA4B00DE69B6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8613AC91ECEBA4B00DE69B6 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +77,32 @@
 		D82F94961ECD787E009B95FD /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		D82F94981ECD7896009B95FD /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		D82F949A1ECD78C1009B95FD /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D8613A921ECE7F6100DE69B6 /* NetworkingReachabilityService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingReachabilityService.swift; sourceTree = "<group>"; };
+		D8613A941ECE7FAC00DE69B6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D8613A971ECE802700DE69B6 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		D8613A991ECE804400DE69B6 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D8613A9B1ECE805600DE69B6 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		D8613A9D1ECE809000DE69B6 /* GlobalFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		D8613A9F1ECE816E00DE69B6 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		D8613AA21ECE81C900DE69B6 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		D8613AA41ECE830500DE69B6 /* Observable+Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Operators.swift"; sourceTree = "<group>"; };
+		D8613AA61ECE842B00DE69B6 /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
+		D8613AA81ECE860F00DE69B6 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		D8613AAA1ECE87AD00DE69B6 /* UILable+Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+Font.swift"; sourceTree = "<group>"; };
+		D8613AAE1ECE8C7B00DE69B6 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		D8613AB01ECE8CC500DE69B6 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		D8613AB21ECE8ECB00DE69B6 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		D8613AB41ECE8F1E00DE69B6 /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		D8613AB61ECE8F3F00DE69B6 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		D8613AB81ECE8F8600DE69B6 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		D8613ABA1ECE8FA900DE69B6 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		D8613ABD1ECEA01D00DE69B6 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		D8613ABF1ECEA09100DE69B6 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		D8613AC11ECEB8F300DE69B6 /* AuthPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthPlugin.swift; sourceTree = "<group>"; };
+		D8613AC31ECEB91200DE69B6 /* ServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		D8613AC51ECEB95300DE69B6 /* AlertService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		D8613AC71ECEB98100DE69B6 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		D8613AC91ECEBA4B00DE69B6 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				77BA6DA61ECDC3A20086D0F9 /* NetActivityPlugin.swift */,
+				D8613AC11ECEB8F300DE69B6 /* AuthPlugin.swift */,
 			);
 			path = Plugin;
 			sourceTree = "<group>";
@@ -93,8 +146,11 @@
 		77BA6DAA1ECDC4C80086D0F9 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				D8613ABF1ECEA09100DE69B6 /* Logger.swift */,
 				77BA6DAB1ECDC4C80086D0F9 /* Constants.swift */,
 				77BA6DAF1ECDC5960086D0F9 /* DateHelper.swift */,
+				D8613A9D1ECE809000DE69B6 /* GlobalFunctions.swift */,
+				D8613AA61ECE842B00DE69B6 /* HelperFunctions.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -130,6 +186,7 @@
 				D82F94861ECD775B009B95FD /* Serives */,
 				D82F94831ECD775B009B95FD /* Extensions */,
 				77BA6DAA1ECDC4C80086D0F9 /* Helper */,
+				D8613AA11ECE81BC00DE69B6 /* Rx */,
 				D82F94871ECD775B009B95FD /* Supporting Files */,
 			);
 			path = RxMacShe;
@@ -146,6 +203,7 @@
 		D82F94821ECD775B009B95FD /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D8613A971ECE802700DE69B6 /* HomeCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -156,6 +214,15 @@
 				77BA6D941ECDBC080086D0F9 /* UIColor+Extension.swift */,
 				77BA6DA81ECDC42E0086D0F9 /* UIImageView+Extension.swift */,
 				77BA6DAD1ECDC53B0086D0F9 /* Swift+Extension.swift */,
+				D8613AA81ECE860F00DE69B6 /* UIViewController+Extension.swift */,
+				D8613AAA1ECE87AD00DE69B6 /* UILable+Font.swift */,
+				D8613AAE1ECE8C7B00DE69B6 /* Date+Extension.swift */,
+				D8613AB01ECE8CC500DE69B6 /* String+Extension.swift */,
+				D8613AB21ECE8ECB00DE69B6 /* UIApplication+Extension.swift */,
+				D8613AB41ECE8F1E00DE69B6 /* UIImage+Extension.swift */,
+				D8613AB61ECE8F3F00DE69B6 /* UITableView+Extension.swift */,
+				D8613AB81ECE8F8600DE69B6 /* UIView+Frame.swift */,
+				D8613ABA1ECE8FA900DE69B6 /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -163,6 +230,7 @@
 		D82F94841ECD775B009B95FD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D8613A941ECE7FAC00DE69B6 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,6 +240,7 @@
 			children = (
 				77BA6DA51ECDC38D0086D0F9 /* Plugin */,
 				77BA6DA31ECDBECB0086D0F9 /* AppApi.swift */,
+				D8613ABD1ECEA01D00DE69B6 /* Networking.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -179,6 +248,11 @@
 		D82F94861ECD775B009B95FD /* Serives */ = {
 			isa = PBXGroup;
 			children = (
+				D8613AC71ECEB98100DE69B6 /* BaseService.swift */,
+				D8613A921ECE7F6100DE69B6 /* NetworkingReachabilityService.swift */,
+				D8613AC31ECEB91200DE69B6 /* ServiceProvider.swift */,
+				D8613AC51ECEB95300DE69B6 /* AlertService.swift */,
+				D8613AC91ECEBA4B00DE69B6 /* AuthService.swift */,
 			);
 			path = Serives;
 			sourceTree = "<group>";
@@ -208,6 +282,8 @@
 		D82F948E1ECD775B009B95FD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D8613A991ECE804400DE69B6 /* HomeView.swift */,
+				D8613A9F1ECE816E00DE69B6 /* BaseTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -215,6 +291,7 @@
 		D82F94941ECD77D2009B95FD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D8613A9B1ECE805600DE69B6 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -227,6 +304,15 @@
 				D82F949A1ECD78C1009B95FD /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		D8613AA11ECE81BC00DE69B6 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				D8613AA21ECE81C900DE69B6 /* UIViewController+Rx.swift */,
+				D8613AA41ECE830500DE69B6 /* Observable+Operators.swift */,
+			);
+			path = Rx;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,20 +453,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				77BA6DB01ECDC5960086D0F9 /* DateHelper.swift in Sources */,
+				D8613AC61ECEB95300DE69B6 /* AlertService.swift in Sources */,
+				D8613AC21ECEB8F300DE69B6 /* AuthPlugin.swift in Sources */,
 				77BA6D9B1ECDBD5F0086D0F9 /* MemberViewController.swift in Sources */,
 				77BA6DAE1ECDC53B0086D0F9 /* Swift+Extension.swift in Sources */,
+				D8613AC41ECEB91200DE69B6 /* ServiceProvider.swift in Sources */,
+				D8613A9C1ECE805600DE69B6 /* HomeViewModel.swift in Sources */,
+				D8613AB51ECE8F1E00DE69B6 /* UIImage+Extension.swift in Sources */,
+				D8613AC81ECEB98100DE69B6 /* BaseService.swift in Sources */,
+				D8613AAB1ECE87AD00DE69B6 /* UILable+Font.swift in Sources */,
+				D8613ABE1ECEA01D00DE69B6 /* Networking.swift in Sources */,
 				D82F948F1ECD775B009B95FD /* AppDelegate.swift in Sources */,
 				77BA6DA91ECDC42E0086D0F9 /* UIImageView+Extension.swift in Sources */,
+				D8613AA31ECE81C900DE69B6 /* UIViewController+Rx.swift in Sources */,
 				D82F949B1ECD78C1009B95FD /* BaseViewController.swift in Sources */,
 				D81F01351ECDA134006B03F5 /* R.generated.swift in Sources */,
+				D8613A951ECE7FAC00DE69B6 /* User.swift in Sources */,
+				D8613AA71ECE842B00DE69B6 /* HelperFunctions.swift in Sources */,
 				77BA6DA41ECDBECB0086D0F9 /* AppApi.swift in Sources */,
+				D8613A931ECE7F6100DE69B6 /* NetworkingReachabilityService.swift in Sources */,
 				77BA6D991ECDBD0A0086D0F9 /* HomeViewController.swift in Sources */,
+				D8613AAF1ECE8C7B00DE69B6 /* Date+Extension.swift in Sources */,
+				D8613AA91ECE860F00DE69B6 /* UIViewController+Extension.swift in Sources */,
 				77BA6DAC1ECDC4C80086D0F9 /* Constants.swift in Sources */,
 				D82F94991ECD7896009B95FD /* NavigationViewController.swift in Sources */,
 				77BA6D9D1ECDBD650086D0F9 /* BillViewController.swift in Sources */,
 				77BA6DA71ECDC3A20086D0F9 /* NetActivityPlugin.swift in Sources */,
+				D8613ABC1ECE919C00DE69B6 /* UIView+Frame.swift in Sources */,
+				D8613AA01ECE816E00DE69B6 /* BaseTableViewCell.swift in Sources */,
+				D8613A9E1ECE809000DE69B6 /* GlobalFunctions.swift in Sources */,
+				D8613ABB1ECE8FA900DE69B6 /* UIView+Extension.swift in Sources */,
 				D82F94971ECD787E009B95FD /* TabBarViewController.swift in Sources */,
+				D8613AA51ECE830500DE69B6 /* Observable+Operators.swift in Sources */,
+				D8613A981ECE802700DE69B6 /* HomeCell.swift in Sources */,
 				77BA6D951ECDBC080086D0F9 /* UIColor+Extension.swift in Sources */,
+				D8613AC01ECEA09100DE69B6 /* Logger.swift in Sources */,
+				D8613ACA1ECEBA4B00DE69B6 /* AuthService.swift in Sources */,
+				D8613AB11ECE8CC500DE69B6 /* String+Extension.swift in Sources */,
+				D8613AB31ECE8ECB00DE69B6 /* UIApplication+Extension.swift in Sources */,
+				D8613A9A1ECE804400DE69B6 /* HomeView.swift in Sources */,
+				D8613AB71ECE8F3F00DE69B6 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

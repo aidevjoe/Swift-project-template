@@ -2,26 +2,23 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    // MARK: Properties
+    lazy private(set) var className: String = {
+        return type(of: self).description().components(separatedBy: ".").last ?? ""
+    }()
+    
+    // MARK: Initializing
+    init() {
+        super.init(nibName: nil, bundle: nil)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    required convenience init?(coder aDecoder: NSCoder) {
+        self.init()
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: Action    
+    func cancelButtonDidTap() {
+        self.dismiss(animated: true, completion: nil)
     }
-    */
-
 }

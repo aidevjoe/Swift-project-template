@@ -12,6 +12,7 @@ target 'RxMacShe' do
    pod 'Moya/RxSwift'
    pod 'MoyaSugar/RxSwift'
    pod 'Kingfisher'
+   pod 'ReachabilitySwift'
    
    # Rx
    pod 'RxSwift'
@@ -21,13 +22,30 @@ target 'RxMacShe' do
    
    # UI
    pod 'SnapKit'
-   
+#   pod 'TouchAreaInsets'
+
    # Model
    
    # Logging
+   pod 'CocoaLumberjack/Swift'
    
    # Misc
    pod 'Then'
    pod 'R.swift'
+   pod 'KeychainAccess'
+
+
    
+#   target 'RxMacSheTests' do
+#       inherit! :search_paths
+#       
+#       pod 'FBSnapshotTestCase'
+#       pod 'Nimble-Snapshots'
+#       pod 'Quick'
+#       pod 'Nimble'
+#       pod 'Forgeries'
+#       pod 'RxBlocking'
+#       
+#   end
+
 end

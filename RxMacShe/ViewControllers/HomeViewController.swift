@@ -1,11 +1,16 @@
 import UIKit
+import RxSwift
+import NSObject_Rx
 
 class HomeViewController: BaseViewController {
-
+    
+    let provider = ServiceProvider()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -13,7 +18,6 @@ class HomeViewController: BaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
