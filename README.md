@@ -11,26 +11,29 @@ This warehouse only allows you to build your own project quickly without any ted
 
 ```
    # Networking
-   pod 'Alamofire'
-   pod 'Moya/RxSwift'
-   pod 'MoyaSugar/RxSwift'
-   pod 'Kingfisher'
+    pod 'Alamofire', '~> 4.4'
+    pod 'Moya/RxSwift'
+    pod 'MoyaSugar/RxSwift'
+    pod 'Kingfisher'
+    pod 'ReachabilitySwift'
    
    # Rx
-   pod 'RxSwift'
-   pod 'RxCocoa'
-   pod 'RxDataSources'
-   pod 'NSObject+Rx'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'RxDataSources'
+    pod 'NSObject+Rx'
    
    # UI
-   pod 'SnapKit'
+    pod 'SnapKit'
    
    # Model
    
    # Logging
+    pod 'CocoaLumberjack/Swift'
    
    # Misc
-   pod 'Then'
-   pod 'R.swift'
-   
+    pod 'Then'
+    pod 'R.swift'
+    pod 'KeychainAccess'
+
 ```
