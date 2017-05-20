@@ -7,7 +7,7 @@ struct Constants {
     static let ScreenHeight = UIScreen.main.bounds.height
     static let TabBarHeight: CGFloat = 49
     
-    static let BaseURL = "http://www.site.com/api"
+    static let BaseURL = "http://jsonplaceholder.typicode.com"
     
     struct Error {
         static let InvalidEmail = "The email is not valid"

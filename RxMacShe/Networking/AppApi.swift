@@ -4,6 +4,7 @@ import MoyaSugar
 enum AppApi {
     case SignIn(email: String, password: String)
     case Signup()
+    case Posts()
 }
 
 extension AppApi: SugarTargetType {
@@ -18,6 +19,8 @@ extension AppApi: SugarTargetType {
         switch self {
         case .SignIn:
             return .post("/login")
+        case .Posts:
+            return .get("posts")
         default:
             return .get("")
         }
@@ -42,19 +45,38 @@ extension AppApi: SugarTargetType {
         return .request
     }
     
+    var stubStatusCode: Int {
+        return 200
+    }
+    
     /// Provides stub data for use in testing.
     public var sampleData: Data {
-        switch self {
-        default:
-            return Data()
+        guard let stubFile = stubFileName(forStatusCode: stubStatusCode),
+            let data = try? Data(contentsOf: URL(fileURLWithPath: stubFile)) else { return Data()
+        }
+        return data
+    }
+}
+
+extension TargetType {
+    
+    func stubFileName(forStatusCode statusCode: Int = 200) -> String? {
+        guard let stubsPath = ApiConstants.stubsPath else { return nil }
+        if let selfString = "\(self)".components(separatedBy: "(").first {
+            return "\(stubsPath)\(type(of: self))_\(selfString)_\(statusCode).json"
+        } else {
+            return "\(stubsPath)\(type(of: self))_\(self)_\(statusCode).json"
         }
     }
 }
 
-func stubbedResponse(filename: String) -> Data! {
-    @objc class TestClass: NSObject { }
+struct ApiConstants {
     
-    let bundle = Bundle(for: TestClass.self)
-    let path = bundle.path(forResource: filename, ofType: "json")
-    return (try? Data(contentsOf: URL(fileURLWithPath: path!)))
+    /// Build Phases -> Run Script -> Path
+    static var stubsPath: String? = {
+        guard let infoPlist = Bundle.main.infoDictionary,
+            let stubsPath = infoPlist["StubsDirectoryPath"] as? String else { return nil }
+        
+        return stubsPath
+    }()
 }

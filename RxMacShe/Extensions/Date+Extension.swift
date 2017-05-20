@@ -1,11 +1,3 @@
-//
-//  Date+Extension.swift
-//  RxMacShe
-//
-//  Created by Joe on 2017/5/19.
-//  Copyright © 2017年 Joe. All rights reserved.
-//
-
 import Foundation
 
 extension Date {

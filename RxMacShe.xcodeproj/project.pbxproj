@@ -18,10 +18,10 @@
 		77BA6DAC1ECDC4C80086D0F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA6DAB1ECDC4C80086D0F9 /* Constants.swift */; };
 		77BA6DAE1ECDC53B0086D0F9 /* Swift+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA6DAD1ECDC53B0086D0F9 /* Swift+Extension.swift */; };
 		77BA6DB01ECDC5960086D0F9 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BA6DAF1ECDC5960086D0F9 /* DateHelper.swift */; };
+		77BA6DBE1ECF27C40086D0F9 /* Stubs in Resources */ = {isa = PBXBuildFile; fileRef = 77BA6DBD1ECF27C40086D0F9 /* Stubs */; };
 		D81F01351ECDA134006B03F5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81F01341ECDA134006B03F5 /* R.generated.swift */; };
 		D82F948F1ECD775B009B95FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82F94811ECD775B009B95FD /* AppDelegate.swift */; };
 		D82F94901ECD775B009B95FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82F94881ECD775B009B95FD /* Assets.xcassets */; };
-		D82F94911ECD775B009B95FD /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D82F94891ECD775B009B95FD /* Info.plist */; };
 		D82F94921ECD775B009B95FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82F948A1ECD775B009B95FD /* LaunchScreen.storyboard */; };
 		D82F94971ECD787E009B95FD /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82F94961ECD787E009B95FD /* TabBarViewController.swift */; };
 		D82F94991ECD7896009B95FD /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82F94981ECD7896009B95FD /* NavigationViewController.swift */; };
@@ -67,6 +67,7 @@
 		77BA6DAB1ECDC4C80086D0F9 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		77BA6DAD1ECDC53B0086D0F9 /* Swift+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Swift+Extension.swift"; sourceTree = "<group>"; };
 		77BA6DAF1ECDC5960086D0F9 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		77BA6DBD1ECF27C40086D0F9 /* Stubs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Stubs; sourceTree = "<group>"; };
 		CB123EA195BB074401AFC785 /* Pods-RxMacShe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxMacShe.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxMacShe/Pods-RxMacShe.release.xcconfig"; sourceTree = "<group>"; };
 		D81F01341ECDA134006B03F5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		D82F946B1ECD7629009B95FD /* RxMacShe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxMacShe.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -238,6 +239,7 @@
 		D82F94851ECD775B009B95FD /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				77BA6DBD1ECF27C40086D0F9 /* Stubs */,
 				77BA6DA51ECDC38D0086D0F9 /* Plugin */,
 				77BA6DA31ECDBECB0086D0F9 /* AppApi.swift */,
 				D8613ABD1ECEA01D00DE69B6 /* Networking.swift */,
@@ -329,6 +331,7 @@
 				7A06779BC785E20988F8A35D /* [CP] Embed Pods Frameworks */,
 				BBE56247DD6717937AC2DB23 /* [CP] Copy Pods Resources */,
 				D81F01331ECD9DFD006B03F5 /* ShellScript */,
+				77BA6DBC1ECF26DA0086D0F9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -380,13 +383,26 @@
 			files = (
 				D82F94901ECD775B009B95FD /* Assets.xcassets in Resources */,
 				D82F94921ECD775B009B95FD /* LaunchScreen.storyboard in Resources */,
-				D82F94911ECD775B009B95FD /* Info.plist in Resources */,
+				77BA6DBE1ECF27C40086D0F9 /* Stubs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		77BA6DBC1ECF26DA0086D0F9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Config\n\n# Path to stubs file.\n# Remember to end it with /\n# This should be a folder reference, not a group (in Xcode)\n\npath=\"/RxMacShe/Networking/Stubs/\"\n\n# Script\ncurrent_dir=$(pwd)\nstubsPath=\"${current_dir}${path}\"\nmkdir -p $stubsPath\ninfoplist=\"$BUILT_PRODUCTS_DIR/$INFOPLIST_PATH\"\nif [[ -d $stubsPath ]]; then\n# if StubsDirectoryPath string doesn't exist, add it\n/usr/libexec/PlistBuddy -c \"Add :StubsDirectoryPath string $stubsPath\" \"${infoplist}\"\n# and if StubsDirectoryPath already existed, update it\n/usr/libexec/PlistBuddy -c \"Set :StubsDirectoryPath $stubsPath\" \"${infoplist}\"\nfi";
+		};
 		7A06779BC785E20988F8A35D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -599,7 +615,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "RxMacShe/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joe78.RxMacShe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -614,7 +629,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "RxMacShe/Supporting Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joe78.RxMacShe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
